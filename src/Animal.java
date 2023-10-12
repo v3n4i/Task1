@@ -1,12 +1,14 @@
 public class Animal {
 
-    private String name;
-    private int age;
-    private int weight;
-    private String color;
-    private String goda;
-    public String Say(){
-        return "Я говорю";
+    String name;
+    int age;
+    int weight;
+    String color;
+    String goda;
+    public void Say()
+    {
+        System.out.println("Я говорю");
+
     }
     public String Go (){
         return "Я иду";
@@ -25,13 +27,6 @@ public class Animal {
     }
 
 
-
-
-    /*  String i = function1();
-        if (age==1){
-            i="год";}
-*/
-
     public String toString (){
         return "Привет! меня зовут "+name+", мне "+age+" "+goda()+". Я вешу - "+weight+" кг, мой цвет - "+color;}
 
@@ -40,9 +35,11 @@ public class Animal {
         String i = "лет";
         if (age ==1){
             i = "год";}
-        if (age==2){
+        if (age==2||age==3||age==4){
             i = "года";
-        }
+        } {
+            i = "лет";}
+
         return i;
     }
 }
